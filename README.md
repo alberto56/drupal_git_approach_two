@@ -56,7 +56,7 @@ To update from version 1 to version 2, you can do the following:
 
     git checkout -b version2
     git pull origin version2
-    sites/all/modules/custom/demo_deploy/scripts/update.sh
+    scripts/update.sh
 
 If you look at `update.sh`, it contains everything required to update any environment. It is better to put this script under version control rather than in a continuous integration server, because we want to be able to version it. (For some projects the script may change over time.)
 
